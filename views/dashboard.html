@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- font link -->
+    <link rel="stylesheet" href="fonts/font.css">
+    <!-- css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>
+</head>
+<body>
+    <section class="main_section">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="link_list_div">
+                            <div class="icon_div">
+                                <img src="image/icon.svg" alt="" class="img-fluid">
+                            </div>
+                            <div class="navbar-toggler custome_toggler">
+                                <span class="toggler-line"></span>
+                                <span class="toggler-line"></span>
+                                <span class="toggler-line"></span>
+                                </button>
+                                <ul>
+                                    <li class="active"><a href="">Research</a> </li>
+                                    <li><a href="">Article</a> </li>
+                                    <li><a href="">Competitors</a> </li>
+                                    <li><a href="">Networks</a> </li>
+                                    <li><span></span></li>
+                                    <li><a href="">Linkedin</a> </li>
+                                    <li><a href="">Instagram</a> </li>
+                                    <li><a href="">Youtube</a> </li>
+                                    <li><span></span></li>
+                                    <li><a href="">Testimonial</a> </li>
+                                    <li><a href="">Blog Comment</a> </li>
+                                    <li><span></span></li>
+                                    <li class="logout"><a href="">Logout</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        async function uploadFile() {
+                          let formData = new FormData(); 
+                          formData.append("sampleFile", sampleFile.files[0]);
+                            await fetch('http://localhost:3000/dashboard/upload', {
+                            method: "POST", 
+                            body: formData
+                          }); 
+                        }
+                        </script>
+                    
+                    <div class="col-md-9">
+                        <div class="link_description_div padding_left">
+                            <h1 class="main_sub_heading">Research</h1>
+                            <div class="button_div">
+                               <div class="position-relative upload_button">
+                                   
+
+                                  
+                                      <input type="file" name="sampleFile"  id="sampleFile" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"/>
+                                      <input type='submit' value='Upload!' class="common_button border_button" />
+                                 
+                                </div>
+                           
+                                <a href="" class="common_button border_button">Clear</a>
+                                <a href="javascript:;" onclick="uploadFile()" class="common_button background_button">Generate</a>
+                            </div>
+                            <div class="link_description_text">
+                                <h4 class="sub_heading pb-3">Researor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod
+                                    tempor incididunt ut labore et dolore</h4>
+                                <p class="seperate_text">Command : Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit, sed </p>
+                                <p>do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div class="competitors_tab_div">
+                                <div class="competitors_tab_heading">
+                                    <h3 class="tab_heading">Competitors</h3>
+                                    <div class="competitors_main_tab_div">
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="competitor-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#competitor" type="button" role="tab"
+                                                    aria-controls="competitor" aria-selected="true">Competitors</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="backlink-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#backlink" type="button" role="tab"
+                                                    aria-controls="backlink" aria-selected="false">Backlinks</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="domain-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#domain" type="button" role="tab"
+                                                    aria-controls="domain" aria-selected="false">Domain</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="configure-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#configure" type="button" role="tab"
+                                                    aria-controls="configure" aria-selected="false">Configure</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="competitor" role="tabpanel"
+                                        aria-labelledby="competitor-tab">
+                                        <div class="tab_description mt-4">
+                                            <div class="tabdescriprion_button d-flex justify-content-between">
+                                                <div class="position-relative upload_button">
+                                                    <a href="" class="common_button border_button">Upload</a>
+                                                    
+                                                    <input type="file" name="myfile" />
+
+                                                </div>
+                                                <a href="" class="common_button border_button">Download</a>
+                                            </div>
+                                            <table class="table_tab_description mt-5 first_tab">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Competitor</th>
+                                                        <th>Bscklinks</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="">www.yoursitename.com</a> </td>
+                                                        <td>40024</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="">www.yoursitename.com</a> </td>
+                                                        <td>40024</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="">www.yoursitename.com</a> </td>
+                                                        <td>40024</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="backlink" role="tabpanel"
+                                        aria-labelledby="backlink-tab">
+                                        <table class="table_tab_description second_tab">
+                                            <thead>
+                                                <tr>
+                                                    <th>Competitor</th>
+                                                    <th>Bscklinks</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Cofimr.com</td>
+                                                    <td><a href="">Lorem ipsum dolor sit amet, conse ctetur
+                                                            adipiscing elit, sed </a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="tab-pane fade" id="domain" role="tabpanel" aria-labelledby="domain-tab">
+                                        <table class="table_tab_description third_tab">
+                                            <thead>
+                                                <tr>
+                                                    <th>Domain</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="third_tab_text">
+                                                            <a href="">Cofimr.comwww.yoursitename.com <img
+                                                                    src="image/correct_image.svg" alt=""></a>
+                                                            <div class="third_tab_button">
+                                                                <a href=""
+                                                                    class="common_button delete_button">Delete</a>
+                                                                <div class="position-relative upload_button">
+                                                                    <a href=""
+                                                                        class="common_button border_button">Upload</a>
+                                                                    <input type="file" name="myfile" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="third_tab_text">
+                                                            <a href="">Cofimr.comwww.yoursitename.com</a>
+                                                            <div class="third_tab_button">
+                                                                <a href=""
+                                                                    class="common_button delete_button">Delete</a>
+                                                                <div class="position-relative upload_button">
+                                                                    <a href=""
+                                                                        class="common_button border_button">Upload</a>
+                                                                    <input type="file" name="myfile" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="third_tab_text">
+                                                            <a href="">Cofimr.comwww.yoursitename.com <img
+                                                                    src="image/correct_image.svg" alt=""></a>
+                                                            <div class="third_tab_button">
+                                                                <a href=""
+                                                                    class="common_button delete_button">Delete</a>
+                                                                <div class="position-relative upload_button">
+                                                                    <a href=""
+                                                                        class="common_button border_button">Upload</a>
+                                                                    <input type="file" name="myfile" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="tab-pane fade" id="configure" role="tabpanel"
+                                        aria-labelledby="configure-tab">
+                                        <div class="description pt-3">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius itaque eum
+                                                reprehenderit error iste. Temporibus odio dolorum sequi qui. Neque?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.custome_toggler').click(function () {
+                $(this).toggleClass("close_toggle");
+                $('.custome_toggler ul').toggleClass("open_ul");
+            });
+        })
+    </script>
+</body>
+
+</html>
